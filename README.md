@@ -16,6 +16,7 @@ This project is a cricket player database management application created as part
     cd Cricket Player Database System
     ```
     [note: If EOF is reached prematurely due to internet disconnection while receiving objects, changing to HTTP version 1.1 and increasing the buffer size might help. You might also need to change your internet network from wifi to data connection.]
+    
     Optionally, if clone fails, do the following and try again.
     ```
     git config --global http.version HTTP/1.1
