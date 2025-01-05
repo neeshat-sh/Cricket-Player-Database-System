@@ -22,8 +22,8 @@ cd Cricket Player Database System
 ## Future Improvements
 - User Interface Enhancements: Develop a more intuitive and visually appealing UI.
 - Extended Functionality:
-..1. Enable editing player details.
-..2. Allow clubs to set player prices.
-..3. Introduce features like bidding for players between clubs.
+    1. Enable editing player details.
+    2. Allow clubs to set player prices.
+    3. Introduce features like bidding for players between clubs.
 ## Acknowledgments
 This project was developed as part of the coursework for Level 1 Term 2 of the CSE program at BUET.
