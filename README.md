@@ -1,19 +1,26 @@
-## Getting Started
+## Cricket-Player-Database-System
+This project is a cricket player database management application created as part of my Level 1 Term 2 coursework. The application combines Java networking and JavaFX for a seamless graphical and functional experience.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-# Cricket-Player-Database-System
+# Features
+1. Player Search: Search players based on various metrics.
+2. Player Management: Add new players to the database.
+3. Club Transactions: Buy and sell players between clubs, simulating IPL-like player trading.
+4. Self-Contained Setup: Includes all required libraries, including the JavaFX SDK, for easy execution.
+# Requirements
+- Java Development Kit (JDK): Version 8 or above.
+- JavaFX SDK: Already included in the lib folder of this repository.
+# Setup and Usage
+1. Clone this repository:
+`git clone https://github.com/neeshat-sh/Cricket-Player-Database-System.git`
+`cd Cricket Player Database System`
+2. Open the project in your preferred Java IDE (e.g., IntelliJ IDEA, Eclipse).
+3. Ensure the JavaFX SDK from the lib folder is correctly configured in your project's library path.
+4. Build and run the project from your IDE.
+# Future Improvements
+- User Interface Enhancements: Develop a more intuitive and visually appealing UI.
+- Extended Functionality:
+..1. Enable editing player details.
+..2. Allow clubs to set player prices.
+..3. Introduce features like bidding for players between clubs.
+# Acknowledgments
+This project was developed as part of the coursework for Level 1 Term 2 of the CSE program at BUET.
