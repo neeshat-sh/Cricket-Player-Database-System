@@ -33,4 +33,4 @@ This project is a cricket player database management application created as part
     2. Allow clubs to set player prices.
     3. Introduce features like bidding for players between clubs.
 ## Acknowledgments
-This project was developed as part of the coursework for Level 1 Term 2 of the CSE program at BUET.
+This project was developed as part of the coursework for CSE 108: Object Oriented Programming Language Sessional during my Level 1 Term 2 of the CSE program at BUET.
