@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="679.0" prefWidth="1000.0" stylesheets="@/styles/menuStyles.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminHomeController">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="689.0" fitWidth="1135.0" AnchorPane.bottomAnchor="-10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-23.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@/views/images/background.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="message" alignment="CENTER" layoutX="515.0" layoutY="59.0" prefHeight="27.0" prefWidth="170.0" text="ADMIN VIEW" textFill="#d2d4a7">
+         <font>
+            <Font name="Monospace 821 Bold BT" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="playerTable" layoutX="171.0" layoutY="129.0" prefHeight="435.0" prefWidth="499.0" style="-fx-font-weight: bold; -fx-font-family: 'Monospaced'; -fx-font-size: 16px; -fx-text-fill: #662e21;">
+         <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="480.7999725341797" style="-fx-font-weight: bold; -fx-font-family: 'Monospaced'; -fx-font-size: 16px; -fx-text-fill: #662e21;" text="Player" />
+         </columns>
+      </TableView>
+            <TableView fx:id="playerDetailsTable" layoutX="681.0" layoutY="129.0" prefHeight="238.0" prefWidth="398.0" style="-fx-font-family: 'Monospaced'; -fx-font-size: 14px;">
+               <columns>
+                  <TableColumn fx:id="detailNameColumn" prefWidth="145.60003662109375" style="-fx-font-weight: bold; -fx-text-fill: #662e21;" text="Detail">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="detailName" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="detailValueColumn" prefWidth="246.4000244140625" style="-fx-font-weight: bold; -fx-text-fill: #662e21;" text="Value">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="detailValue" />
+                     </cellValueFactory>
+                  </TableColumn>
+               </columns>
+            </TableView>
+      <TableView fx:id="countryTable" layoutX="681.0" layoutY="377.0" prefHeight="186.0" prefWidth="398.0" style="-fx-font-family: 'Monospaced'; -fx-font-size: 14px;" visible="false">
+         <columns>
+            <TableColumn fx:id="countryColumn" prefWidth="239.20001983642578" style="-fx-font-weight: bold; -fx-font-family: 'Monospaced'; -fx-text-fill: #662e21;" text="Country" />
+            <TableColumn fx:id="countColumn" prefWidth="140.79998779296875" style="-fx-font-weight: bold; -fx-font-family: 'Monospaced'; -fx-text-fill: #662e21;" text="Player Count" />
+         </columns>
+      </TableView>
+      <Button fx:id="button" layoutX="1005.0" layoutY="612.0" mnemonicParsing="false" onAction="#logoutAction" text="Logout" textFill="#d15929">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="909.0" layoutY="612.0" mnemonicParsing="false" onAction="#defaultView" text="Refresh" textFill="#d15929">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+      </Button>
+      <MenuButton layoutX="8.0" layoutY="192.0" mnemonicParsing="false" text="Search Options">
+         <font>
+            <Font name="Monospaced Bold" size="14.0" />
+         </font>
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#showByNameFields" styleClass="menu-item" text="By Name" />
+            <MenuItem mnemonicParsing="false" onAction="#showByCountryAndClubFields" styleClass="menu-item" text="By Country and Club" />
+            <MenuItem mnemonicParsing="false" onAction="#showByPositionFields" styleClass="menu-item" text="By Position" />
+            <MenuItem mnemonicParsing="false" onAction="#showBySalaryRangeFields" styleClass="menu-item" text="By Salary Range" />
+            <MenuItem mnemonicParsing="false" onAction="#countryWisePlayerCount" styleClass="menu-item" text="Country Wise Player Count" />
+         </items>
+      </MenuButton>
+      <TextField fx:id="nameField" layoutX="416.0" layoutY="612.0" prefHeight="27.0" prefWidth="178.0" promptText="Enter Name" visible="false">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="countryField" layoutX="217.0" layoutY="612.0" prefHeight="27.0" prefWidth="178.0" promptText="Enter Country" visible="false">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="clubField" layoutX="400.0" layoutY="612.0" prefHeight="26.0" prefWidth="194.0" promptText="Enter Club" visible="false">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="positionField" layoutX="416.0" layoutY="612.0" prefHeight="27.0" prefWidth="178.0" promptText="Enter Position" visible="false">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="minSalaryField" layoutX="217.0" layoutY="612.0" prefHeight="27.0" prefWidth="178.0" promptText="Enter Min Salary" visible="false">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="maxSalaryField" layoutX="400.0" layoutY="612.0" prefHeight="27.0" prefWidth="194.0" promptText="Enter Max Salary" visible="false">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="searchButton" layoutX="601.0" layoutY="612.0" mnemonicParsing="false" onAction="#handleSearch" text="Search" textFill="#d15929" visible="false">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+      </Button>
+       <Button fx:id="addPlayerButton" layoutX="783.0" layoutY="612.0" mnemonicParsing="false" onAction="#showAddPlayerFields" text="Add Player" textFill="#d15929">
+         <font>
+            <Font name="Monospaced Bold" size="16.0" />
+         </font>
+      </Button>
+   <TextField fx:id="playerNameField" layoutX="681.0" layoutY="380.0" prefHeight="27.0" prefWidth="398.0" promptText="Enter Name">
+      <font>
+         <Font name="Monospaced Bold" size="14.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="ageField" layoutX="681.0" layoutY="419.0" prefHeight="27.0" prefWidth="204.0" promptText="Enter Age">
+      <font>
+         <Font name="Monospaced Bold" size="14.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="playerCountryField" layoutX="681.0" layoutY="457.0" prefHeight="27.0" prefWidth="144.0" promptText="Enter Country">
+      <font>
+         <Font name="Monospaced Bold" size="14.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="heightField" layoutX="891.0" layoutY="419.0" prefHeight="27.0" prefWidth="188.0" promptText="Enter Height">
+      <font>
+         <Font name="Monospaced Bold" size="14.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="playerClubField" layoutX="838.0" layoutY="457.0" prefHeight="27.0" prefWidth="242.0" promptText="Enter Club">
+      <font>
+         <Font name="Monospaced Bold" size="14.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="playerPositionField" layoutX="681.0" layoutY="498.0" prefHeight="27.0" prefWidth="170.0" promptText="Enter Position">
+      <font>
+         <Font name="Monospaced Bold" size="14.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="jerseyField" layoutX="862.0" layoutY="498.0" prefHeight="27.0" prefWidth="217.0" promptText="Enter Jersey Number">
+      <font>
+         <Font name="Monospaced Bold" size="14.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="salaryField" layoutX="681.0" layoutY="536.0" prefHeight="27.0" prefWidth="267.0" promptText="Enter Salary">
+      <font>
+         <Font name="Monospaced Bold" size="14.0" />
+      </font>
+   </TextField>
+   <Button fx:id="save" layoutX="1026.0" layoutY="536.0" mnemonicParsing="false" onAction="#handleAddPlayer" text="Save" textFill="#d15929">
+      <font>
+         <Font name="Monospaced Bold" size="14.0" />
+      </font>
+   </Button>
+   </children>
+</AnchorPane>

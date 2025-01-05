@@ -1,0 +1,6 @@
+.menu-item {
+    -fx-font-family: "Monospaced";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #d15929;
+}

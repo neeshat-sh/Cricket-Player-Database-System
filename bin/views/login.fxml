@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="570.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainLoginController">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="632.0" fitWidth="841.0" layoutX="-36.8" layoutY="-44.8" AnchorPane.bottomAnchor="-16.0" AnchorPane.leftAnchor="-37.0" AnchorPane.rightAnchor="-64.0" AnchorPane.topAnchor="-45.0">
+         <image>
+            <Image url="@/views/images/background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logoView" fitHeight="247.0" fitWidth="241.0" layoutX="0.8" layoutY="148.8" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="149.0">
+         <image>
+            <Image url="@/views/images/ipl logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="200.0" layoutY="134.0" prefHeight="63.0" prefWidth="454.0" text="IPL PLAYER DATABASE" textFill="#d2d4a7">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="34.0" />
+         </font>
+      </Label>
+    <Button fx:id="adminButton" alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="258.0" mnemonicParsing="false" onAction="#admin" prefHeight="34.0" prefWidth="276.0" text="Login As Admin" textFill="#d15929">
+         <font>
+            <Font name="Monospace 821 Bold BT" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="clubButton" alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="355.0" mnemonicParsing="false" onAction="#club" prefHeight="34.0" prefWidth="276.0" text="Login As Club" textFill="#d15929">
+         <font>
+            <Font name="Monospace 821 Bold BT" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

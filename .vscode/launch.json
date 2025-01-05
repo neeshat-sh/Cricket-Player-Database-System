@@ -1,0 +1,43 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "network.server.Server",
+            "projectName": "Cricket Player Database System_74878fe9"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "network.server.Server",
+            "projectName": "Cricket Player Database System_cdb4fc83",
+            "vmArgs": "--module-path lib/javafx-sdk-21.0.5/lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "network.server.Server",
+            "projectName": "Cricket Player Database System_744fd5f0",
+            "vmArgs": "--module-path lib/javafx-sdk-21.0.5/lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "main.Main",
+            "projectName": "Cricket Player Database System_744fd5f0",
+            "vmArgs": "--module-path lib/javafx-sdk-21.0.5/lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "main.Main",
+            "vmArgs": "--module-path lib/javafx-sdk-21.0.5/lib --add-modules javafx.fxml,javafx.controls,javafx.graphics"
+        }
+    ]
+}
