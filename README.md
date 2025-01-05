@@ -12,8 +12,9 @@ This project is a cricket player database management application created as part
 ## Setup and Usage
 1. Clone this repository:
 ```
-`git clone https://github.com/neeshat-sh/Cricket-Player-Database-System.git`
-`cd Cricket Player Database System`
+git clone https://github.com/neeshat-sh/Cricket-Player-Database-System.git
+cd Cricket Player Database System
+
 ```
 2. Open the project in your preferred Java IDE (e.g., IntelliJ IDEA, Eclipse).
 3. Ensure the JavaFX SDK from the lib folder is correctly configured in your project's library path.
