@@ -6,6 +6,13 @@
             "name": "Server",
             "request": "launch",
             "mainClass": "network.server.Server",
+            "projectName": "Cricket Player Database System_bc7dc2de"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "network.server.Server",
             "projectName": "Cricket Player Database System_3299fd68"
         },
         {
